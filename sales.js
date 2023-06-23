@@ -54,6 +54,7 @@ CookieLabStand.prototype.calcCustomersEachHour = function () {
 };
 
 CookieLabStand.prototype.calcCookiesEachHour = function () {
+  
   for (let i = 0; i < hours.length; i++) {
     const oneHour = Math.ceil(
       this.customersEachHour[i] * this.avgCookiesPerHour
