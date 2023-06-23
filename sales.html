@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cookie-stand-lab-o7</title>
     <meta name="all-about-cookies" content="This is a project to create a multi-location app for a cookie business." />
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="new.css" />
    </head>
 <body>
     <header>
@@ -16,12 +16,31 @@
         <h2>a delightful experience</h2>
         <div id="container">
         </div> 
-            
+       
     </main>
-<footer></footer>
 <div id="container"></div>
   <table id="storeTable"> </table>
-  <script src="sales.js"></script>
 
-</body>
+  <div>
+    <form>
+      
+      <fieldset>
+        
+        <legend>store-name</legend>
+        <label for="name">name</label>
+        <input type="text" name="name" id="name">
+        <label for="minCustomers">minCustomers</label>
+        <input type="number" name="minCustomers" id="minCustomers">
+        <label for="maxCustomers">maxCustomers</label>
+        <input type="number" name="maxCustomers" id="maxCustomers">
+        <label for="avgCookies">avgCookies</label>
+        <input type="number" name="avgCookies" id="avgCookies" min="0" step="0.01">
+        
+      </fieldset>
+    </form>
+    <button type="submit">Click to Submit Form</button>
+   </div>     
+  <script src="sales.js"></script>
+<footer></footer>
+  </body>
 </html>
