@@ -155,3 +155,23 @@ function hoursRow() {
   storeTable.appendChild(tr);
 }
 hourlyTotals();
+
+newStoreForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  storeTable.innerHTML = "";
+  hoursRow();
+
+  for (let i = 0; i < allStores.length; i++) {
+    allStores[i].render();
+  }
+
+  const storeNameInput = event.target.name.value;
+  const minCustInput = event.target.minCust.value;
+  const maxCustInput = event.target.maxCust.value;
+  const avgCookiesInput = event.target.avgCookies.value;
+
+  const store = new CookieLabStand(storeNameInput, minCustInput, maxCustInput, avgCookiesInput);
+
+  hourlyTotals();
+  newStoreForm.reset();
+});
