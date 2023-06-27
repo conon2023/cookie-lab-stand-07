@@ -2,45 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>cookie-stand-lab-o7</title>
-    <meta name="all-about-cookies" content="This is a project to create a multi-location app for a cookie business." />
-    <link rel="stylesheet" href="new.css" />
-   </head>
-<body>
-    <header>
-        <h1>Cookie-Lab-Stand</h1>
-    </header>
-    <main>
-        <h2>a delightful experience</h2>
-        <div id="container">
-        </div> 
-       
-    </main>
-<div id="container"></div>
-  <table id="storeTable"> </table>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cookie-stand-lab-o7</title>
+  <meta name="all-about-cookies" content="This is a project to create a multi-location app for a cookie business." />
+  <link rel="stylesheet" href="new.css" />
+</head>
 
-  <div>
-    <form>
-      
+<body>
+  <header>
+    <h1>Cookie-Lab-Stand</h1>
+  </header>
+  <main>
+    <h2>a delightful experience</h2>
+  </main>
+  <div id="container">
+    <table id="storeTable"> </table>
+  </div>
+
+  <!-- <div class="form-container">
+    <form id="new-store-form">
       <fieldset>
-        
-        <legend>store-name</legend>
-        <label for="name">name</label>
-        <input type="text" name="name" id="name">
-        <label for="minCustomers">minCustomers</label>
-        <input type="number" name="minCustomers" id="minCustomers">
-        <label for="maxCustomers">maxCustomers</label>
-        <input type="number" name="maxCustomers" id="maxCustomers">
-        <label for="avgCookies">avgCookies</label>
-        <input type="number" name="avgCookies" id="avgCookies" min="0" step="0.01">
-        
+        <legend>Enter New Cookie Store:</legend>
+        <label for="name-input">Store Name:</label>
+        <input type="text" id="name-input" name="name" />
+
+        <label for="min-cust-input">Min Customers / Hour</label>
+        <input type="number" name="minCust" id="min-cust-input" />
+
+        <label for="max-cus-input">Max Customers / Hour</label>
+        <input type="number" name="maxCust" id="max-cust-input" />
+
+        <label for="avg-cookies-input">Average cookies Sold / per customer</label>
+        <input type="number" name="avgCookies" id="avg-cookies-input" step="0.1" min="0" />
       </fieldset>
+      <button id="submit-button" type="submit">Click to Submit Form</button>
     </form>
-    <button type="submit">Click to Submit Form</button>
-   </div>     
+  </div> -->
   <script src="sales.js"></script>
-<footer></footer>
-  </body>
+  <footer></footer>
+</body>
+
 </html>
